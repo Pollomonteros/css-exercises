@@ -1,6 +1,13 @@
+/* Row wasnt needed since it is flex default */
+/* Should have used padding since it is meant to provide an space between container and content */
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display:flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 8px;
 }
 
 .logo {
@@ -11,9 +18,17 @@
   padding: 4px 32px;
 }
 
+
+/* Key here was applying flex properties to unordered list */
+
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display:flex;
+  align-items: center;
+  margin: 0px;
+  padding:0px;
+  gap: 8px;
 }
 
 a {
